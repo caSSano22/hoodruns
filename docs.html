@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Docs & API — Hoodruns (Virtuals.io Agent Integration)</title>
+  <meta name="description" content="Technical documentation for integrating Hoodruns Virtuals.io AI Agent on Robinhood Chain EVM." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="virtual-protocol-site-verification" content="c05f5a1ba52d411ad6922786be8b5076" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div style="display: flex; align-items: center;">
+      <a href="index.html" class="brand-logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0e121a"/>
+          <path d="M8 24C12 24 16 20 18 14C20 8 24 6 24 6C24 6 22 12 18 16C14 20 8 24 8 24Z" fill="#00ff66"/>
+        </svg>
+        <span>Hood<span class="runners">runs</span></span>
+      </a>
+
+      <div class="chain-badge" style="margin-left: 16px;">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: #00ff66; display: inline-block;"></span>
+        ROBINHOOD CHAIN
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Overview</a>
+      <a href="terminal.html" class="nav-link">Trenches Terminal</a>
+      <a href="alerts.html" class="nav-link">Alert History</a>
+      <a href="docs.html" class="nav-link active">Docs & API</a>
+    </nav>
+
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <button class="btn-outline-lime connect-wallet-trigger" onclick="openWalletModal()">Connect Wallet</button>
+      <a href="terminal.html" class="btn-lime">Launch Terminal →</a>
+    </div>
+  </header>
+
+  <!-- DOCS CONTENT -->
+  <main class="wrap-1280" style="padding: 80px 32px;">
+    <div class="eyebrow-badge">VIRTUALS.IO AGENT SPECIFICATIONS</div>
+    <h1 style="font-family: var(--font-display); font-size: 3.2rem; font-weight: 800; margin-bottom: 24px;">API & Signal Webhook Specs</h1>
+    <p style="color: var(--text-2); font-size: 1.1rem; max-width: 640px; margin-bottom: 48px;">
+      Connect your Telegram bot, Discord server, or algorithmic trading script to Hoodruns real-time signal stream on Robinhood Chain EVM.
+    </p>
+
+    <div style="background: var(--surface-0); border: 1px solid var(--stroke-strong); border-radius: var(--radius-lg); padding: 32px;">
+      <div style="font-family: var(--font-mono); color: var(--text-3); font-size: 0.82rem; margin-bottom: 12px;">WEBSOCKET SIGNAL SUBSCRIPTION</div>
+      <pre style="font-family: var(--font-mono); color: var(--lime-neon); font-size: 0.88rem; line-height: 1.6;">wss://api.hoodruns.com/v1/stream?chain=robinhood_42161&agent=virtuals_0x89</pre>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap-1280" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 8px;">Hood<span class="runners">runs</span></div>
+        <p style="font-size: 0.88rem; color: var(--text-3);">&copy; 2026 Hoodruns Protocol. Robinhood Chain EVM.</p>
+      </div>
+
+      <div class="nav-links" style="display: flex; gap: 28px;">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="terminal.html" class="nav-link">Trenches Terminal</a>
+        <a href="alerts.html" class="nav-link">Alert History</a>
+        <a href="docs.html" class="nav-link">Docs & API</a>
+        <a href="https://x.com/Hoodruns" target="_blank" class="nav-link">𝕏 @Hoodruns</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
