@@ -1,4 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="#07090e"/>
-  <path d="M8 24C12 24 16 20 18 14C20 8 24 6 24 6C24 6 22 12 18 16C14 20 8 24 8 24Z" fill="#00ff66"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <image href="favicon.png" width="512" height="512"/>
 </svg>
