@@ -9,8 +9,28 @@ let userAddress = null;
 document.addEventListener('DOMContentLoaded', () => {
   initTableFilters();
   initLiveScannerUpdates();
+  initFaqAccordions();
   checkExistingEIP1193Connection();
 });
+
+// FAQ Accordion Toggle
+function initFaqAccordions() {
+  const faqHeaders = document.querySelectorAll('.faq-accordion-header');
+  faqHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+      const body = item.querySelector('.faq-accordion-body');
+      if (body) {
+        if (item.classList.contains('open')) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+        } else {
+          body.style.maxHeight = '0px';
+        }
+      }
+    });
+  });
+}
 
 // 1. Alert Table Filters
 function initTableFilters() {
